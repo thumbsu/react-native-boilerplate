@@ -28,6 +28,7 @@ module.exports = {
   plugins: ['react', 'react-hooks', '@typescript-eslint', 'prettier'],
   rules: {
     'prettier/prettier': 'error',
+    '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/member-delimiter-style': [
       'error',
       {
