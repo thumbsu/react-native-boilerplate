@@ -8,22 +8,16 @@
  * @format
  */
 
-import { SafeAreaView, StatusBar, Text } from 'react-native'
+import 'react-native-gesture-handler'
 
-import Home from './pages/Home'
-import Icon from 'react-native-vector-icons/FontAwesome'
+import MainStack from './routes/mainStack'
+import { NavigationContainer } from '@react-navigation/native'
 import React from 'react'
 
 export default function App(): JSX.Element {
   return (
-    <>
-      <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
-        <Icon.Button name="facebook" backgroundColor="#3b5998">
-          <Text style={{ fontSize: 15, color: '#fff' }}>Login with Facebook</Text>
-        </Icon.Button>
-        <Home />
-      </SafeAreaView>
-    </>
+    <NavigationContainer>
+      <MainStack />
+    </NavigationContainer>
   )
 }

@@ -1,14 +1,14 @@
-import { Text, TouchableOpacity, View } from 'react-native'
-import { observer, useObserver } from 'mobx-react'
+import { SafeAreaView, Text, TouchableOpacity, View } from 'react-native'
 
 import React from 'react'
+import { useObserver } from 'mobx-react'
 import useStores from '../../hooks/useStores'
 
 export default function Home() {
   const { counter } = useStores()
 
   return useObserver(() => (
-    <>
+    <SafeAreaView>
       <View>
         <Text>{counter.count}</Text>
       </View>
@@ -22,6 +22,6 @@ export default function Home() {
           <Text>--</Text>
         </View>
       </TouchableOpacity>
-    </>
+    </SafeAreaView>
   ))
 }
