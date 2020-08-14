@@ -10,3 +10,4 @@ React Native Boilerplate made to suit my taste 😋.
 - [Husky](https://github.com/typicode/husky) + [lint-staged](https://github.com/okonet/lint-staged)
 - [Jest](https://facebook.github.io/jest/)
 - [Vector Icon](https://github.com/oblador/react-native-vector-icons)
+- [MobX](https://mobx.js.org/README.html) Store
